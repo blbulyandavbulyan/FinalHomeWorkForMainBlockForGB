@@ -9,6 +9,7 @@ public class StringArrayTransformer {
         for(int i = 0; i < array.length; i++){
             if(array[i].length() <= maxStringLength)newArrayLength++;
         }
+        //выделение памяти под новый массив и заполнение его подходящими нам строками из старого массива
         result = new String[newArrayLength];
         for(int i = 0, ni = 0; i < array.length; i++){
             if(array[i].length() <= maxStringLength){
